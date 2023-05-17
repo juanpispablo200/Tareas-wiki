@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datos Abstractos - Wiki</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>Datos Abstractos</h1>
+
+    <h2>Tipos de Datos Abstractos</h2>
+    <p>Existen varios tipos de datos abstractos comunes que se utilizan en la programación y el análisis de algoritmos. Algunos de los más conocidos son:</p>
+
+    <ul>
+        <li><strong>Listas:</strong> Una lista es una colección ordenada de elementos donde cada elemento tiene una posición única.</li>
+        <li><strong>Pilas:</strong> Una pila es una colección de elementos donde el último elemento en entrar es el primero en salir (LIFO - Last In, First Out).</li>
+        <li><strong>Colas:</strong> Una cola es una colección de elementos donde el primer elemento en entrar es el primero en salir (FIFO - First In, First Out).</li>
+        <li><strong>Árboles:</strong> Un árbol es una estructura jerárquica que consta de nodos conectados entre sí por enlaces.</li>
+        <li><strong>Grafos:</strong> Un grafo es una colección de nodos (vértices) conectados entre sí por aristas (arcos).</li>
+    </ul>
+
+    <h2>Ejemplo de Código</h2>
+    <p>Aquí tienes un ejemplo de implementación de una lista en lenguaje Python:</p>
+
+    <pre><code>
+class Lista:
+    def __init__(self):
+        self.items = []
+
+    def esta_vacia(self):
+        return len(self.items) == 0
+
+    def agregar(self, item):
+        self.items.append(item)
+
+    def remover(self, item):
+        if item in self.items:
+            self.items.remove(item)
+
+    def obtener_tamanio(self):
+        return len(self.items)
+
+    def imprimir(self):
+        for item in self.items:
+            print(item)
+
+# Uso de la lista
+mi_lista = Lista()
+mi_lista.agregar(1)
+mi_lista.agregar(2)
+mi_lista.agregar(3)
+mi_lista.imprimir()
+    </code></pre>
+
+</body>
+</html>
